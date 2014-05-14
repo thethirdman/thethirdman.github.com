@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Hello world"
-description: ""
+description: "a test"
+published : false
 category: 
 tags: []
 ---

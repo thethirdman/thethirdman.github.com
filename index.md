@@ -5,13 +5,14 @@ tagline: Supporting tagline
 ---
 
 {% for post in site.posts offset: 0 limit: 50 %}
+{% if post.published %}
 <div class="row">
   <div class="span7">
     <div class="row">
       <div class="span5">
       <h4><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h4>
       <p>
-        {{ post.summary }}
+        {{ post.description}}
       </p>
       <p>
         <i class="icon-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
@@ -24,4 +25,5 @@ tagline: Supporting tagline
     <hr>
   </div>
 </div>
+{% endif %}
 {% endfor %}
