@@ -5,7 +5,6 @@ tagline: Supporting tagline
 ---
 
 {% for post in site.posts offset: 0 limit: 50 %}
-{% if post.published %}
 <div class="row">
   <div class="span7">
     <div class="row">
@@ -25,5 +24,4 @@ tagline: Supporting tagline
     <hr>
   </div>
 </div>
-{% endif %}
 {% endfor %}
