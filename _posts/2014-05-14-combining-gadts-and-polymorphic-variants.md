@@ -188,7 +188,7 @@ type ast =
 
 In this example, the type `any` is the union of our two previously defined
 types `ptr` and `direct`. The type `lang_type` is also rewritten, so that `Ptr`
-and `Direct` return a more general signature: the syntaxe `[> ptr] lang_type`
+and `Direct` return a more general signature: the syntax `[> ptr] lang_type`
 tells Ocaml that the type being returned contains at least `Ptr`. In our use
 case, it allows a value constructed with `Ptr` to be either a `ptr lang_type`
 or a `any lang_type`. This means that `any lang_type` encompasses the kinds of
